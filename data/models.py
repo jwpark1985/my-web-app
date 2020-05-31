@@ -4,6 +4,7 @@ from django.conf import settings
 # Create your models here.
 class Source(models.Model):
     data_source = models.CharField(max_length=10)
+    language = models.CharField(max_length=10)
 
     def __str__(self):
         return self.data_source
