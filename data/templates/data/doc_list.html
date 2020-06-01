@@ -1,0 +1,9 @@
+{% extends 'data/base.html' %}
+
+{% block content %}
+    {% for doc in docs %}
+         <div class="doc">
+            {{ doc|linebreaksbr }}
+        </div>
+    {% endfor %}
+{% endblock %}
